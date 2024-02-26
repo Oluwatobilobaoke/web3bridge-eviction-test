@@ -8,6 +8,7 @@ const ALCHEMY_API_KEY_URL = process.env.ALCHEMY_API_KEY_URL;
 const MAINET_ALCHEMY_API_KEY_URL = process.env.MAINET_ALCHEMY_API_KEY_URL;
 
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
+const PAYEE_PRIVATE_KEY = process.env.PAYEE_PRIVATE_KEY;
 
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY;
 
@@ -15,6 +16,7 @@ if (
   !(
     ALCHEMY_API_KEY_URL ||
     PRIVATE_KEY ||
+    PAYEE_PRIVATE_KEY ||
     ETHERSCAN_API_KEY ||
     MAINET_ALCHEMY_API_KEY_URL
   )
@@ -31,7 +33,7 @@ const config: HardhatUserConfig = {
     sepolia: {
       url: ALCHEMY_API_KEY_URL,
       //@ts-ignore
-      accounts: [PRIVATE_KEY],
+      accounts: [PRIVATE_KEY, PAYEE_PRIVATE_KEY],
     },
     hardhat: {
       forking: {
