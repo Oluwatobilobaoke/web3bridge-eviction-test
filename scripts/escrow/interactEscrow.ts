@@ -47,3 +47,7 @@ interactEscrow().catch((error) => {
 // npx hardhat run scripts/interactEscrow.ts --network sepolia
 
 // Transaction successful with hash: 0x0b7148189f0ee9993ae95647a40ed4b7bbc910c9023486339fcfc70981d04d36
+// https://sepolia.etherscan.io/tx/0x0b7148189f0ee9993ae95647a40ed4b7bbc910c9023486339fcfc70981d04d36
+
+// Transaction successful with hash: 0x0b7148189f0ee9993ae95647a40ed4b7bbc910c9023486339fcfc70981d04d36
+// https://sepolia.etherscan.io/tx/0x7c6d6fd8d71e09969df2efaec2ed701d766004d0f3a981e8456a947357a6d4d8
