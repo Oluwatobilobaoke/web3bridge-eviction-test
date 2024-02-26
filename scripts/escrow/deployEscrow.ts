@@ -15,7 +15,7 @@ main().catch((error) => {
   process.exitCode = 1;
 });
 
-// npx hardhat run scripts/deployEscrow.ts --network sepolia
+// npx hardhat run scripts/escrow/deployEscrow.ts --network sepolia
 
 // Escrow Factory contract deployed to 0x9D51E0D4426e6fF018630930ad7Da6481D3ed57e
 
